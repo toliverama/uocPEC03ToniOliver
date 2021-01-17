@@ -1,0 +1,540 @@
+html {
+	font-family: 'Noto Serif', serif;
+	font-size: 10px;
+}
+body {
+		
+	font-size: 2rem;
+    background: rgb(232, 232, 232);
+    margin: 0px;
+}
+
+
+button{
+	background-color: #A01127 ;
+	color: white;
+	font-size: 2rem;
+    outline: none;
+    border: none;
+	border-radius: .4em;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    display: block;
+    
+}
+header{
+    font-family: 'Open Sans', sans-serif;;
+    margin-top: 20px;
+    display: grid
+    
+    
+}
+.h1{
+    font-family: 'Noto Serif', serif;
+    margin: auto;
+    
+}    
+.h2{
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1em;
+}      
+
+.oscar {   
+    float: left;   
+    margin-right: 5px;          
+}
+.club {
+    font-style: italic;
+    font-weight: 200;
+    color: #A01127 ;
+}
+
+.section1{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.howto{
+    width: 250px;
+    padding-top: 20px; 
+}
+.footerlist,.footerlist2{
+    padding-top: 70px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.footerlist3{
+    padding-top: 50px; 
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1rem;
+}
+.box2{
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 40px;
+}
+.boxclub{
+    display: grid;    
+    max-width: 640px;
+    margin: auto;   
+}
+.section4{
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.submov1{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 10px;
+
+}
+.section5{
+    padding-bottom: 100px;
+}
+.gris{
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+.ficha{
+    list-style: none;
+    font-size: 2.5rem;
+    padding-left: 20px;
+}
+.nav{
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+/*responsive*/
+
+@media screen and (min-width: 800px) {
+    
+    
+    button {
+        grid-column: 8;
+    }
+    .h1 {
+        grid-column: 1;
+        grid-row: 1;             
+    }
+    .h2:nth-of-type(1) {        
+        grid-column: 4;
+        grid-row: 1;
+    }    
+    .h2:nth-of-type(2) {      
+        grid-column: 5;
+        grid-row: 1;
+    }
+    .section1{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 10vw;
+        padding-right: 10vw;        
+    }
+    .howto{
+        width: 150px;
+    }
+    .box2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 10vw;
+        padding-right: 10vw;  
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .footerlist li{
+        display: inline-block;
+    }
+    .footerlist{
+        text-align: left;
+        margin-left: 15px;
+    }
+    .footerlist li:after {
+        content: "•";
+        margin: 0 5px;
+    }
+    .footerlist li:last-child:after {
+        display: none;
+    }
+    .footerlist2 li{
+        display: inline-block;
+    }
+    .footerlist2{
+        text-align: right;
+        margin-right: 15px;
+    }
+    .footerlist2 li:after {
+        content: "•";
+        margin: 0 5px;
+    }
+    .footerlist2 li:last-child:after {
+        display: none;
+    }
+    .footerlist3{
+        text-align: left;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        margin: 0;    
+    }
+    .boxclub{
+        grid-template-columns: repeat(3,1fr);
+        max-width: none;
+        gap: 30px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .section5{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        border-top: dotted #A01127 ;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .imagemovies{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .listmenutop{
+        grid-column: 1/1;
+        grid-row: 1/24;       
+    }
+    .subclub1 {        
+        grid-column: 1 / 4;
+        grid-row: 1;          
+    }
+    .subclub2{
+        grid-column: 1 / 4;
+        grid-row: 3;        
+    }
+    .subclub3{
+        grid-column: 1 / 4;
+        grid-row: 5;       
+    }
+    .subclub4{
+        grid-column: 1 / 4;
+        grid-row: 7;       
+    }
+    .subclub5{
+        grid-column: 1 / 4;
+        grid-row: 9;       
+    }
+    .subclub6{
+        grid-column: 1 / 4;
+        grid-row: 11;       
+    }
+    .section4{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .submov1{
+        font-size: 2rem;
+    }
+    .imagemovies{
+        padding-top: 100px;
+    }
+    .boxdetalle{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .section6,.gris,.ficha,.section7{
+        font-size: 1.5rem;
+    }
+    .nav,.titulo{
+        text-align: left;
+        padding-left: 150px;
+    }
+    
+} 
+/*LINKS*/
+
+button a {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+}
+.footerlist2 a {
+	color:rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: 400;
+}
+.footerlist a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: 400;
+}
+.footerlist3 a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: 400;
+}
+h1 a {
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+}
+h1 a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+h2 a {
+	color: rgb(28, 28, 28);
+	text-decoration: none;
+	font-weight: 700;
+}
+.listmenu a {
+	color: rgb(28, 28, 28);
+	text-decoration: none;
+	font-weight: 400;
+}
+h2 a:hover {
+	opacity: 50%;
+	
+}
+.sublink a {
+    color: #A01127;
+    text-decoration: none;
+    font-weight: 400;
+}
+.imagemovi a {
+    color: #A01127;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav a {
+	color: rgb(28, 28, 28);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.active {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.h22{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.section2{
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.p2{
+    font-size: 2.5rem;
+}
+.sub{
+    margin-top: -5px;
+}
+#log-in{
+    border-width: 0px;
+    padding-left: 0px;
+}
+
+.fieldcol{
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+input { 
+    font-family: inherit; 
+    font-size: 2.5rem; 
+    box-sizing: border-box; 
+    padding: 5px;
+  } 
+.link{
+    color: #A01127;
+}
+input[type="submit"] {
+    font-size: 2rem;
+    font-style: inherit;
+	background-color: #A01127;
+	padding: 10px 25px;
+	border-radius: 5px;
+	color: white;
+	border: 0;
+    
+}
+.box2{
+    padding-bottom: 100px;
+}
+.tsmall{
+    font-size: 1rem;
+}
+footer{
+    background-color: rgb(67, 58, 68);
+    margin-bottom: -20px;
+    
+}
+.footerlist3{
+    font-size: 1.5rem;
+}
+
+.wedge{
+    display: block;
+    color:rgb(255, 255, 255) ;
+    text-align: right;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    
+}
+
+/* CLUBES TEMATICOS*/
+
+.section3{
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.bullet{
+    color: #A01127;
+}
+
+.boxclub{
+    padding-top: 20px;
+}
+.club1{
+    padding-top: 15px;
+    width: 100%;
+}
+.sublink{
+    text-align: left;
+}
+
+
+
+
+
+
+
+/*SESIONES 2020*/
+
+.sessiones{
+    text-align: center;
+}
+.sessiones2{
+    padding-left: 10px;
+    padding-top: 50px;
+}
+.listmenu{
+    list-style: none;
+    padding-inline-start: 10px;
+}
+.imagemovi{
+    display: grid;    
+    max-width: 569px;
+    width: 60%;
+    margin: auto;      
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px #666;
+}
+
+
+.fotomov{
+    width: 100%;
+}
+
+.subclub1,.subclub2,.subclub3,.subclub4,.subclub5,.subclub6{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+
+/*DETALLE SESION*/
+
+
+
+
+
+.h3{
+    border-bottom: 1px solid;
+}
+.section6{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.spantecnic{
+    font-weight: 700;
+}
+.section7{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.titulo{
+    font-size: 4rem;
+}
+.spablos{
+    float: left; 
+    width: 200px;   
+    shape-outside: circle(50%);
+    margin-right:10px; 
+    border-radius: 150px; 
+    padding-right: 20px;    
+}
+
+
+
+.subtrailer{
+    margin-top: 5px;
+}    
+.h2trail{
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
